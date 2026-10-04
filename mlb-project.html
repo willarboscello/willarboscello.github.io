@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Runs Prediction Project</title>
+</head>
+<body>
+
+    <h1>Predicting Whether an MLB Game Will Have 9 or More Runs</h1>
+
+    <h2>Problem Definition</h2>
+    <p>
+        For this project, I wanted to see if I could predict whether an MLB game would have 9 or more total runs.
+        My target variable is runs_9_plus, where 1 means the game finished with 9 or more runs and 0 means it finished with less than 9 runs.
+    </p>
+
+    <h2>Background and Context</h2>
+    <p>
+        There are a lot of things that can affect how many runs are scored in an MLB game.
+        I looked at things like the teams, venue, weather, and temperature to see if basic pregame information could help predict scoring.
+    </p>
+
+    <h2>Data Description</h2>
+    <p>
+        The dataset contains 2,464 MLB games from the 2025 season. Each row represents one game.
+        The data includes the home and away teams, venue, score, weather, temperature, attendance, and other game information.
+    </p>
+
+    <h2>Model Results</h2>
+    <p>
+        I compared a baseline model, logistic regression, and a decision tree.
+        Logistic regression performed the best with about 54.0% accuracy.
+        The decision tree had about 52.1% accuracy, while the baseline had about 51.1%.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        The results showed that these basic pregame features had some value, but they were not strong enough to predict scoring very accurately.
+        If I continued the project, I would add more baseball-specific features like starting pitchers, bullpen strength, injuries, and recent team performance.
+    </p>
+
+    <h2>Project Files</h2>
+    <p>
+        <a href="mlb_runs_prediction.ipynb">View Jupyter Notebook</a>
+    </p>
+
+    <p>
+        <a href="game_details_2025.csv">View Dataset</a>
+    </p>
+
+    <p>
+        <a href="index.html">Back to Portfolio Home</a>
+    </p>
+
+</body>
+</html>
